@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f1eb;
+    margin: 0;
+    padding: 20px;
+}
+
+.container,
+.login-card {
+    background: rgb(248, 248, 248);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.login-card {
+    width: 300px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.login-card a {
+    color: #0072ec;
+    text-decoration: none;
+}
+
+.login-card a:visited {
+     color: #0072ec;
+}
+
+.login-card a:hover {
+    color: rgb(31, 69, 192);
+}
+
+.container {
+    max-width: 1000px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group input {
+    width: calc(33% - 15px);
+    display: inline-block;
+   
+}
+
+button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+.btn-editar {
+    background: #ffc107;
+    color: black;
+}
+
+.btn-excluir {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-sair {
+    background: #6c757d;
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.btn-sair:hover {
+    background-color: #dc3545;
+    
+
+}
+
+.btn-limpar-busca {
+    background: #6c757d;
+}
+
+.btn-limpar-busca:hover {
+    background: #5a6268;
+}
+
+.busca-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.busca-group input {
+    width: 200px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #657cf3;
+    padding-bottom: 10px;
+}
+
+/* ===== Responsividade ===== */
+/* Telas de tablet: os 3 campos do formulário passam para 2 por linha */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .form-group input {
+        width: calc(50% - 15px);
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+/* Telas de celular: campos do formulário e tabela ficam em coluna única (scroll horizontal na tabela) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-card {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .btn-sair {
+        float: none;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

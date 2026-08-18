@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-card">
+        <h2>Criar Conta</h2>
+        <input type="text" id="nome" placeholder="Nome completo" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="text" id="cpf" placeholder="CPF (somente números)" required maxlength="">
+        <input type="text" id="telefone" placeholder="Telefone" maxlength="11">
+        <input type="date" id="data_nascimento" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <button onclick="cadastrar()">Cadastrar</button>
+        <p style="margin-top: 15px;">
+            <a href="/">Já tem conta? Fazer login</a>
+        </p>
+    </div>
+
+    <script src="{{ url_for('static', filename='registro.js') }}"></script>
+</body>
+</html>
