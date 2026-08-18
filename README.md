@@ -200,4 +200,6 @@ Tabela `usuarios`:
 ## 👤 Autor
 Kayone Silva do Nasicento
 
+Github : https://github.com/kayone12/Crud-em-python
+
 Atividade prática individual — Desenvolvimento de um CRUD de Usuários (Front-end, Back-end e Banco de Dados).
